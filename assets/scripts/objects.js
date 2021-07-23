@@ -31,7 +31,7 @@ filteredMovies.forEach(movie =>{//....for each movie in array create list entry 
     for(const key in info){//......for in loop which loops through all key value pairs in the object
 
         if(key !=='title' && key !== '_title'){//..if key is not title
-            text = text + `${key}; ${info[key]}`//...return ??
+            text = text + `${key}; ${info[key]}`//...return string literal
         }
     }
     movieEl.textContent = text
